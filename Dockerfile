@@ -32,4 +32,4 @@ HEALTHCHECK --interval=5s --timeout=3s --start-period=5s CMD nslookup -po=${PORT
 
 USER cloudflared
 
-CMD ["/bin/sh", "-c", "/usr/local/bin/cloudflared proxy-dns --address 0.0.0.0 --port ${PORT} --upstream ${UPSTREAM1} --upstream ${UPSTREAM2} --upstream ${UPSTREAM3} --upstream ${UPSTREAM4}"]
+CMD ["/bin/sh", "-c", "/usr/local/bin/cloudflared proxy-dns --address 0.0.0.0 --port ${PORT} --upstream ${UPSTREAM3} --upstream ${UPSTREAM4}"]
